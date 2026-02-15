@@ -17,27 +17,27 @@ class Partida:
         self.jugadores=[]
         self.esIniciada=False
         self.lista_poderes=[
-            'Bloque el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
-            'Bloque el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
-            'Bloque el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
+            'Bloquea el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
+            'Bloquea el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
+            'Bloquea el robo de tu regalo (Una vez que se vaya a efectuar con seguridad)',
             'Si alguien va a robar tu regalo, juega un pulso chino al mejor de 3. Si resultas ganador, bloqueas el robo de tu regalo',
             'Si alguien va a robar tu regalo, juega un pulso chino al mejor de 3. Si resultas ganador, bloqueas el robo de tu regalo',
-            'Si alguien va a robar tu regalo, esa persona debe recitar el terabalenguas \'Tres tristes tigres trigaban trigo en un trigal\' a la primera y sin equivocarse',
-            'Si alguien va a robar tu regalo, esa persona debe recitar el terabalenguas \'Tres tristes tigres trigaban trigo en un trigal\' a la primera y sin equivocarse',
+            'Si alguien va a robar tu regalo, esa persona debe recitar el trabalenguas \'Tres tristes tigres trigaban trigo en un trigal\' a la primera y sin equivocarse',
+            'Si alguien va a robar tu regalo, esa persona debe recitar el trabalenguas \'Tres tristes tigres trigaban trigo en un trigal\' a la primera y sin equivocarse',
             'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona de TU derecha. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
             'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona de enfrente de TI. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
-            'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona de que TÚ elijas. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
-            'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona de que TÚ elijas. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
+            'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona que TÚ elijas. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
+            'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona que TÚ elijas. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
             'Desvía el robo del regalo (Una vez que se vaya a efectuar con seguridad) a la persona de TU izquierda. Puedes usar tu poder incluso si el regalo a robar no es tuyo',
             'Cambia tu puesto con el jugador que quieras. Solo puedes usar este poder una vez llegado tu turno',
-            'Cambia tu puesto con el jugador que tengas enfrente. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugas',
-            'Cambia tu puesto con el jugador que tengas a tu izquierda. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugas',
-            'Cambia tu puesto con el jugador que tengas a tu derecha. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugas',
-            'Puedes cambiar tu regalo (sólo si lo tienes) con el de cualquier jugador antes del turno 10',
-            'Puedes cambiar tu regalo (sólo si lo tienes) con el de cualquier jugador antes del turno 10',
+            'Cambia tu puesto con el jugador que tengas enfrente. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugado',
+            'Cambia tu puesto con el jugador que tengas a tu izquierda. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugado',
+            'Cambia tu puesto con el jugador que tengas a tu derecha. Solo puedes usar este poder una vez llegado tu turno, siempre y cuando dicho jugador todavía no haya jugado',
+            'Puedes cambiar tu regalo (solo si lo tienes) con el de cualquier jugador antes del turno 10',
+            'Puedes cambiar tu regalo (solo si lo tienes) con el de cualquier jugador antes del turno 10',
             'Solo puedes jugar este poder justo antes de que acabe el turno del jugador objetivo. Este jugador y otro de tu elección que ya haya jugado (puedes ser tú mismo, si ya has jugado) juegan a piedra, papel, tijera al mejor de 3. El ganador decidirá si cambiar o no su regalo con el de su contrincante',
-            'Solo puedes jugar este poder justo cuando el jugador objetivo vaya a ABRIR un regalo. Elije el regalo que ese jugador abrirá',
-            'Solo puedes jugar este poder justo cuando el jugador objetivo vaya a ABRIR un regalo. Elije el regalo que ese jugador abrirá',
+            'Solo puedes jugar este poder justo cuando el jugador objetivo vaya a ABRIR un regalo. Elige el regalo que ese jugador abrirá',
+            'Solo puedes jugar este poder justo cuando el jugador objetivo vaya a ABRIR un regalo. Elige el regalo que ese jugador abrirá',
             'Solo puedes jugar este poder justo cuando el jugador objetivo vaya a ABRIR un regalo. Ese jugador deberá elegir el regalo con los ojos vendados. Antes de escoger debera dar 5 vueltas sobre sí mismo para desorientarse',
             'Solo puedes jugar este poder cuando vayas a ABRIR un regalo. Selecciona 2 de ellos para poder tocarlos con total libertad. Acaba escogiendo uno de los dos para abrir',
             #Puedes intercambiar tu regalo con el jugador numero n (n={1,2,...,len(jugadores)) una vez que él y tú hayais jugado)
@@ -112,4 +112,5 @@ def finalizar_partida(codigo):
     if codigo in partidas:
         del partidas[codigo] # Borra la sala del diccionario global
         return True
+
     return False
